@@ -1,6 +1,9 @@
 :root {
+	--darkest: #2e2f3a;
 	--slim-dark: #464859;
 	--white-text: #fff;
+	--half-dark: rgba(0, 0, 0, 0.5);
+	--white-back: #fff;
 }
 
 .centroid {
@@ -32,7 +35,7 @@
 .hero-overlay {
 	width: 100%;
 	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: var(--half-dark);
 }
 
 /* hero inner */
@@ -41,14 +44,64 @@
 }
 
 .hero-division {
-	padding-top: 15vh;
+	padding-top: 20vh;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 30px;
 }
 
 .hero-name {
 	font-size: 4rem;
 	font-weight: 300;
-	text-shadow: 0px 5px 22px rgba(0, 0, 0, 0.5);
+	text-shadow: 0px 5px 22px var(--half-dark);
 	letter-spacing: 1px;
+}
+
+.hero-title-badges {
+	margin-bottom: 30px;
+	gap: 15px;
+}
+
+.hero-badge {
+	display: table;
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 4px 15px;
+	background-color: var(--slim-dark);
+	box-shadow: 0px 3px 12px var(--darkest);
+	border-radius: 20px;
+	margin-bottom: 15px;
+	white-space: nowrap;
+	letter-spacing: 0.3px;
+}
+
+.hero-social-media {
+	gap: 20px;
+}
+
+.hero-sm {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	display: grid;
+	place-items: center;
+}
+
+.hero-sm img {
+	width: 50%;
+	object-fit: contain;
+}
+
+.hero-ln {
+	background: #0077b5;
+}
+.hero-in {
+	background: #cf296e;
+}
+.hero-tw {
+	background: #1da1f2;
 }
 
 /* END OF HEADER */
